@@ -1,0 +1,29 @@
+//* index.html
+Simple web page skeleton:
+1) Emmet meta data + meta author name & title.
+2) Web page has nice background color and consists mainly of one div with class "container".
+3) h1 title with class.
+4) p tag element with label text and class.
+5) Connected label & input for "bill".
+6) Connected label & input for "tip".
+7) Button element with id of "calculate".
+8) Label & span connected for "total".
+
+//* style.css
+Modern design styling:
+1) CSS universal selector reset.
+2) Linear-gradient for page background.
+3) Standard modern design for container div elements.
+4) Button on-hover transition with ease effect.
+
+//* script.js
+Functionality for button:
+1) First we bring in the button to the document with .getElementById() method.
+2) We add event listener to the button so that when it is clicked, it invokes a function called calculateTotal().
+3) We create a function called calculateTotal().
+4) We will need to know what values the user entered in the inputs for "Bill Amount" & "Tip" so we need to bring those input elements with getElementById() method.
+5) We create 2 variables inside the function and assign the values of those input elements to them.
+6) Since we need to change the span of the "Total" in order to display the total amount, we need to bring in the span with the id of "total" using getElementById() method.
+7) We create a variable called "totalValue" inside the function and assign it to be equal to the bill amount multiplied by (1 + tip value / 100) in order to get the total value.
+8) We then dynamically change the inner text of totalEl to 2 decimal places using toFixed() method.
+
